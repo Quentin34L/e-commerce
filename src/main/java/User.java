@@ -1,43 +1,44 @@
 import java.util.ArrayList;
-import java.util.List; 
+import java.util.List;
 
 public class User {
- private String username;
- private String email;
- private String password;
- private List<Order>orderHistory;
+    private String username;
+    private String email;
+    private String password;
+    private List<Order> orderHistory;
 
-public User(String username, String email, String password){
- this.username = username;
- this.email = email;
- this.password = password;
- this.orderHistory = new ArrayList<>();
 
- }
-public User register(){
- System.out.println("utilisateur" + username+"enregistre avec succes");
- return this;
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.orderHistory = new ArrayList<>();
+    }
 
- }
+    public User register() {
+        System.out.println("Utilisateur " + username + " enregistré avec succès");
+        return this;
+    }
 
-public boolean login(String email, String password){
- if (this.email.equals(email)&& this.password.equals(password)){
- System.out.println("Connexion reussie pour" + username);
- return true; 
- } 
- 
- else {
- System.out.println("Echec de la connexion. Verifier vos identifiants");
- return false;
- }
+   
+    public boolean login(String email, String password) {
+        if (this.email.equals(email) && this.password.equals(password)) {
+            System.out.println("Connexion réussie pour " + username);
+            return true;
+        } else {
+            System.out.println("Échec de la connexion. Vérifier vos identifiants");
+            return false;
+        }
+    }
 
- public void viewOrderHistory() {
-    if (orderHistory.isEmpty()) {
-        System.out.println("Aucune commande passée pour " + username);
-    } else {
-        System.out.println("Historique des commandes pour " + username + ":");
-        for (Order order : orderHistory) {
-            System.out.println(order);
+    public void viewOrderHistory() {
+        if (orderHistory.isEmpty()) {
+            System.out.println("Aucune commande passée pour " + username);
+        } else {
+            System.out.println("Historique des commandes pour " + username + ":");
+            for (Order order : orderHistory) {
+                System.out.println(order);
+            }
         }
     }
 
@@ -45,6 +46,7 @@ public boolean login(String email, String password){
         orderHistory.add(order);
     }
 
+    
     public String getUsername() {
         return username;
     }
@@ -71,9 +73,5 @@ public boolean login(String email, String password){
 
     public List<Order> getOrderHistory() {
         return orderHistory;
-
- }
-
-
+    }
 }
-
