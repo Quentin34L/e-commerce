@@ -1,3 +1,5 @@
+package com.ecommerce;
+
 public class Product {
  private String productName;
  private int productID;
