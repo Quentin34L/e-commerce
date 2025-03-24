@@ -8,7 +8,8 @@
       <title>Site E-Commerce</title>
    </head>
    <body>
-      <h2 id="TextWelcome">Site E-Commerce Java</h2>
+      <a href="sell.jsp"><h2 id="TextWelcome">Site E-Commerce Java</h2></a>
+      
       <div class="container" id="container">
 
          <div class="form-container sign-up-container">

@@ -8,13 +8,15 @@
       <title>Site E-Commerce</title>
    </head>
    <body>
-      <h2 id="TextWelcome">Site E-Commerce Java/h2>
+      <h2 id="TextWelcome">Site E-Commerce Java</h2>
       <div class="container" id="container">
+
+         <a href="sell.jsp"></a><button></button>
 
          <div class="form-container sign-up-container">
             <form action="/register" method="post">
 
-               <h1 class="signup">Crée un compte</h1>
+               <h1 class="signup">Tu veux un compte ?</h1>
                <span>ou utilise ton email pour te connecter</span>
                <input type="text" placeholder="Username" name="username"  required/>
                <input type="email" placeholder="Email"  name="email" required/>
@@ -48,7 +50,7 @@
 
                <div class="overlay-panel overlay-right">
                   <h1>Salut !</h1> 
-                  <p>Si tu veux pouvoir poster, viens créer un compte c'est par ici !</p>
+                  <p>Si tu veux pouvoir acheter, il te faut un compte c'est par ici !</p>
                   <button class="ghost" id="signUp">Inscription</button>
                </div>
 
