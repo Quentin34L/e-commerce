@@ -18,7 +18,7 @@
                 <a href="#">Recherche</a>
                 <a href="#">Notifications</a>
                 <a href="#">Compte</a>
-                <a href="#">Panier</a>
+                <a href="#" class="panier">Panier <span class="panier-count">0</span></a>
             </div>
         </nav>
     </header>
@@ -39,7 +39,7 @@
                     <img src="img/rolex.jpg" alt="Rolex Submariner">
                     <h3>Rolex Submariner</h3>
                     <p>Acier inoxydable - Etanche 300m - Mouvement automatique</p>
-                    <span class="price">9 500 €</span>
+                    <span class="price">9 500 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -47,7 +47,7 @@
                     <img src="img/audemars.jpg" alt="Audemars Piguet Royal Oak Flying Tourbillon In Sand Gold">
                     <h3>Audemars Piguet Royal Oak Flying Tourbillon</h3>
                     <p>Or rose 18k - Tourbillon volant - Mouvement automatique</p>
-                    <span class="price">125 000 €</span>
+                    <span class="price">125 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -55,7 +55,7 @@
                     <img src="img/patek.jpg" alt="Patek Philippe Nautilus">
                     <h3>Patek Philippe Nautilus</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
-                    <span class="price">70 000 €</span>
+                    <span class="price">70 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -63,7 +63,7 @@
                     <img src="img/richard.jpg" alt="Richard Mille Rafael Nadal">
                     <h3>Richard Mille Rafael Nadal</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
-                    <span class="price">225 000 €</span>
+                    <span class="price">225 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -72,7 +72,7 @@
                     <img src="img/alange.jpg" alt="A. Lange & Söhne Tourbograph Perpetuel">
                     <h3>A. Lange & Söhne Tourbograph Perpetuel</h3>
                     <p>Or gris 18k - Mouvement manuel - Tourbillon</p>
-                    <span class="price">400 000 €</span>
+                    <span class="price">400 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -80,7 +80,7 @@
                     <img src="img/omega.jpg" alt="Montre OMEGA Speedmaster '57">
                     <h3>Montre OMEGA Speedmaster '57</h3>
                     <p>Acier inoxydable - Mouvement chronographe - Resistance 100m</p>
-                    <span class="price">6 000 €</span>
+                    <span class="price">6 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>
@@ -88,7 +88,7 @@
                     <img src="img/jaeger.jpg" alt="Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel">
                     <h3>Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel</h3>
                     <p>Or gris - Gyrotourbillon - Sonnerie Westminster</p>
-                    <span class="price">600 000 €</span>
+                    <span class="price">600 000 &euro;</span>
                     <br><br>
                     <button>+ Ajouter au panier</button>
                 </div>

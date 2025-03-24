@@ -110,7 +110,7 @@ body {
 
 /* Applique le flou sur les montres qui ne sont pas au centre */
 .product:not(.active) {
-    filter: blur(5px);
+    filter: blur(0.5px);
     opacity: 0.5;
     transform: scale(0.9);
 }
@@ -165,4 +165,26 @@ body {
 
 .right {
     right: 10px;
+}
+
+/* Panier */
+
+.panier {
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.panier-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #313030;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 13px;
 }
