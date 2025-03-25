@@ -1,0 +1,62 @@
+# E-Commerce System
+
+## Description
+
+Ce projet est une application e-commerce développée en Java. Il permet aux utilisateurs de s'inscrire,parcourir des produits, gérer leur panier et passer des commandes.
+
+
+
+## Fonctionnalités
+
+# Gestion des utilisateurs :
+Inscription, connexion et historique des commandes.
+
+# Gestion des produits : 
+Ajout, modification et suppression de produits.
+
+# Panier d'achat : 
+Ajout et suppression d'articles.
+
+# Traitement des commandes : 
+Validation des commandes et suivi de leur statut.
+
+# API REST : 
+Endpoints pour interagir avec le système.
+
+
+## Installation et exécution
+# Prérequis
+
+Java JDK 17+
+
+Apache Maven
+
+Tomcat 7+
+
+
+
+# Étapes
+Cloner le dépôt :
+
+git clone <URL_DU_REPO>
+cd e-commerce
+
+# Compiler et packager le projet :
+mvn clean package
+
+# Lancer l'application avec Tomcat :
+mvn tomcat7:run
+
+# Accéder à l'application via :
+http://localhost:8085/index.jsp
+
+# Auteurs :
+
+Gabriel Laugier,
+Quentin Letessier,
+Noa Perrin
+
+
+
+
+## Ynov Montpellier Campus
