@@ -111,7 +111,7 @@
             <button class="checkout-btn">Effectuer le paiement</button>
         </div>
     </div>
-<div class="overlay"></div>
+    <div class="overlay"></div>
 
 <script src="script.js"></script>
 

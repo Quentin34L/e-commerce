@@ -10,29 +10,47 @@ document.addEventListener("DOMContentLoaded", function () {
     let cartCount = 0;
     let cartItems = [];
 
+    // Fonction pour mettre à jour le panier
+    function updateCart() {
+        // Générer le HTML des articles
+        cartContent.innerHTML = cartItems.map((item, index) => `
+            <div class="cart-item" data-index="${index}">
+                <img src="${item.img}" alt="${item.name}">
+                <div>
+                    <h4>${item.name}</h4>
+                    <p>${item.price} &euro;</p>
+                </div>
+                <button class="remove-item">Supprimer</button>
+            </div>
+        `).join("");
+
+        // Mettre à jour le total avec séparation des milliers
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.innerHTML = `${total.toLocaleString('fr-FR')} &euro;`;
+
+        // Mise à jour du compteur panier
+        panierCount.textContent = cartItems.length;
+
+        // Ajouter les événements de suppression
+        document.querySelectorAll(".remove-item").forEach(button => {
+            button.addEventListener("click", function () {
+                const index = this.parentElement.dataset.index;
+                cartItems.splice(index, 1);
+                updateCart();
+            });
+        });
+    }
+
     // Fonction pour ajouter un produit au panier
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function () {
-            cartCount++;
-            panierCount.textContent = cartCount;
-
             const product = this.parentElement;
             const productName = product.querySelector('h3').textContent;
-            const productPrice = product.querySelector('.price').textContent;
+            const productPrice = parseFloat(product.querySelector('.price').textContent.replace(/\s/g, '').replace('€', ''));
             const productImg = product.querySelector('img').src;
 
-            const newItem = `
-                <div class="cart-item">
-                    <img src="${productImg}" alt="${productName}">
-                    <div>
-                        <h4>${productName}</h4>
-                        <p>${productPrice}</p>
-                    </div>
-                </div>
-            `;
-            cartItems.push(newItem);
-            cartContent.innerHTML = cartItems.join("");
-            cartTotal.textContent = `${cartCount * parseFloat(productPrice)} €`;
+            cartItems.push({ name: productName, price: productPrice, img: productImg });
+            updateCart();
         });
     });
 
