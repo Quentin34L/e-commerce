@@ -26,7 +26,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Luxury Time, l'elegance du temps</h1>
-            <button class="btn">Explorer</button>
+            <buttona class="btn">Explorer</button>
         </div>
     </section>
 
@@ -97,6 +97,25 @@
         </div>
     </section>
 
+    <!-- Panier latéral -->
+    <div class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Votre Panier</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+        <div class="cart-content">
+            <p>Votre panier est vide.</p>
+        </div>
+        <div class="cart-footer">
+            <p>Total: <span class="cart-total">0 &euro;</span></p>
+            <button class="checkout-btn">Effectuer le paiement</button>
+        </div>
+    </div>
+<div class="overlay"></div>
+
+<script src="script.js"></script>
+
+    
     <script src="script.js"></script>
 </body>
 </html>

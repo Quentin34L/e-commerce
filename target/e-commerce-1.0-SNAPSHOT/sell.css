@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.top-bar {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icons a:hover {
+    background-color: #ddd;
+}
+
+.hero {
+    background: url('luxury-watch-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.products {
+    text-align: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+    max-width: 320px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Applique le flou sur les montres qui ne sont pas au centre */
+.product:not(.active) {
+    filter: blur(0.5px);
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+/* La montre active est plus grande et nette */
+.product.active {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+}
+
+.product button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background: gray;
+}
+
+/* Style des boutons de défilement */
+.scroll-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-button:hover {
+    background-color: #444;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Panier */
+
+.panier {
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.panier-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #313030;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* Animation Panier */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.cart-footer {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.checkout-btn {
+    background: #5a5a5a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
