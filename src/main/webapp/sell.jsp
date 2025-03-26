@@ -26,7 +26,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Luxury Time, l'elegance du temps</h1>
-            <buttona class="btn">Explorer</button>
+            <button class="btn">Explorer</button>
         </div>
     </section>
 
@@ -36,7 +36,6 @@
             <button class="scroll-button left">&larr;</button>
             <div class="product-list">
                 <div class="product" data-stock="10">
-
                     <img src="img/rolex.jpg" alt="Rolex Submariner">
                     <h3>Rolex Submariner</h3>
                     <p>Acier inoxydable - Etanche 300m - Mouvement automatique</p>
@@ -45,10 +44,8 @@
                     <span class="stock">Stock disponible : 10</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="8">
-
                     <img src="img/audemars.jpg" alt="Audemars Piguet Royal Oak Flying Tourbillon In Sand Gold">
                     <h3>Audemars Piguet Royal Oak Flying Tourbillon</h3>
                     <p>Or rose 18k - Tourbillon volant - Mouvement automatique</p>
@@ -57,10 +54,8 @@
                     <span class="stock">Stock disponible : 8</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="2">
-
                     <img src="img/patek.jpg" alt="Patek Philippe Nautilus">
                     <h3>Patek Philippe Nautilus</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
@@ -69,10 +64,8 @@
                     <span class="stock">Stock disponible : 2</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="7">
-
                     <img src="img/richard.jpg" alt="Richard Mille Rafael Nadal">
                     <h3>Richard Mille Rafael Nadal</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
@@ -81,22 +74,18 @@
                     <span class="stock">Stock disponible : 7</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="4">
-
-                    <img src="img/alange.jpg" alt="A. Lange & Söhne Tourbograph Perpetuel">
-                    <h3>A. Lange & Söhne Tourbograph Perpetuel</h3>
+                    <img src="img/alange.jpg" alt="A. Lange & Sohne Tourbograph Perpetuel">
+                    <h3>A. Lange & Sohne Tourbograph Perpetuel</h3>
                     <p>Or gris 18k - Mouvement manuel - Tourbillon</p>
                     <span class="price">400 000 &euro;</span>
                     <br><br>
                     <span class="stock">Stock disponible : 4</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="1">
-
                     <img src="img/omega.jpg" alt="Montre OMEGA Speedmaster '57">
                     <h3>Montre OMEGA Speedmaster '57</h3>
                     <p>Acier inoxydable - Mouvement chronographe - Resistance 100m</p>
@@ -105,10 +94,8 @@
                     <span class="stock">Stock disponible : 1</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
                 <div class="product" data-stock="3">
-
                     <img src="img/jaeger.jpg" alt="Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel">
                     <h3>Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel</h3>
                     <p>Or gris - Gyrotourbillon - Sonnerie Westminster</p>
@@ -117,19 +104,17 @@
                     <span class="stock">Stock disponible : 3</span>
                     <br><br>
                     <button class="add-to-cart">+ Ajouter au panier</button>
-
                 </div>
             </div>
             <button class="scroll-button right">&rarr;</button>
         </div>
     </section>
 
-    <!-- Panier latéral -->
     <div class="cart-sidebar">
-            <div class="cart-header">
-                <h2>Votre Panier</h2>
-                <button class="close-cart">&times;</button>
-            </div>
+        <div class="cart-header">
+            <h2>Votre Panier</h2>
+            <button class="close-cart">&times;</button>
+        </div>
         <div class="cart-content">
             <p>Votre panier est vide.</p>
         </div>
