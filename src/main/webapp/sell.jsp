@@ -35,62 +35,89 @@
         <div class="product-container">
             <button class="scroll-button left">&larr;</button>
             <div class="product-list">
-                <div class="product">
+                <div class="product" data-stock="10">
+
                     <img src="img/rolex.jpg" alt="Rolex Submariner">
                     <h3>Rolex Submariner</h3>
                     <p>Acier inoxydable - Etanche 300m - Mouvement automatique</p>
                     <span class="price">9 500 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 10</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <div class="product">
+                <div class="product" data-stock="8">
+
                     <img src="img/audemars.jpg" alt="Audemars Piguet Royal Oak Flying Tourbillon In Sand Gold">
                     <h3>Audemars Piguet Royal Oak Flying Tourbillon</h3>
                     <p>Or rose 18k - Tourbillon volant - Mouvement automatique</p>
                     <span class="price">125 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 8</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <div class="product">
+                <div class="product" data-stock="2">
+
                     <img src="img/patek.jpg" alt="Patek Philippe Nautilus">
                     <h3>Patek Philippe Nautilus</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
                     <span class="price">70 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 2</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <div class="product">
+                <div class="product" data-stock="7">
+
                     <img src="img/richard.jpg" alt="Richard Mille Rafael Nadal">
                     <h3>Richard Mille Rafael Nadal</h3>
                     <p>Boitier en platine - Reserve de marche 60h - Bracelet integre</p>
                     <span class="price">225 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 7</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <!-- Nouveaux produits -->
-                <div class="product">
+                <div class="product" data-stock="4">
+
                     <img src="img/alange.jpg" alt="A. Lange & Söhne Tourbograph Perpetuel">
                     <h3>A. Lange & Söhne Tourbograph Perpetuel</h3>
                     <p>Or gris 18k - Mouvement manuel - Tourbillon</p>
                     <span class="price">400 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 4</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <div class="product">
+                <div class="product" data-stock="1">
+
                     <img src="img/omega.jpg" alt="Montre OMEGA Speedmaster '57">
                     <h3>Montre OMEGA Speedmaster '57</h3>
                     <p>Acier inoxydable - Mouvement chronographe - Resistance 100m</p>
                     <span class="price">6 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 1</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
-                <div class="product">
+                <div class="product" data-stock="3">
+
                     <img src="img/jaeger.jpg" alt="Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel">
                     <h3>Jaeger-LeCoultre Master Grande Tradition Gyrotourbillon Westminster Perpetuel</h3>
                     <p>Or gris - Gyrotourbillon - Sonnerie Westminster</p>
                     <span class="price">600 000 &euro;</span>
                     <br><br>
-                    <button>+ Ajouter au panier</button>
+                    <span class="stock">Stock disponible : 3</span>
+                    <br><br>
+                    <button class="add-to-cart">+ Ajouter au panier</button>
+
                 </div>
             </div>
             <button class="scroll-button right">&rarr;</button>
@@ -112,9 +139,6 @@
         </div>
     </div>
     <div class="overlay"></div>
-
-<script src="script.js"></script>
-
     
     <script src="script.js"></script>
 </body>
