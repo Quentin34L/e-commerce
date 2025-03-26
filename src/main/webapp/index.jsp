@@ -27,7 +27,7 @@
          </div>
 
          <div class="form-container sign-in-container">
-            <form action="/login" method="post">
+            <form action="sell.jsp" method="post">
 
                <h1>Connexion</h1>
                <input type="email" placeholder="Email" name="Email" required/>
