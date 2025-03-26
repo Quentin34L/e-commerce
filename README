@@ -50,13 +50,24 @@ mvn tomcat7:run
 # Accéder à l'application via :
 http://localhost:8085/index.jsp
 
+
+# Entrer dans la DB 
+
+sudo mysql -u root -p
+10699
+10699
+
+SHOW DATABASES;
+ShopOnline
+USE ShopOnline;
+SHOW TABLES;
+
+
 # Auteurs :
 
 Gabriel Laugier,
 Quentin Letessier,
 Noa Perrin
-
-
 
 
 ## Ynov Montpellier Campus

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>Exemplaire : ${item.quantity}</p>
             </div>
             <button class="remove-item">Supprimer</button>
-        </div>
+        </div
     `).join("");
 
     const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.querySelector('.panier').addEventListener("click", function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Empêche le rechargement de la page car on clique sur href = "#"
         cartSidebar.classList.add("active");
         overlay.classList.add("active");
     });
@@ -104,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateVisibility() {
         products.forEach((product, index) => {
-            product.classList.toggle('active', index === currentIndex);
+            product.classList.toggle('active', index === currentIndex); // Si l'index du produit corresponds à currentIndex 
+                                                                        // ==> ajout "active" ==> mis en avant 
         });
 
         const offset = currentIndex * 320 - (window.innerWidth / 2 - 160);
